@@ -1,0 +1,90 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.3)),url("https://a-static.besthdwallpaper.com/retro-city-wallpaper-2880x1620-30509_52.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.container{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    list-style: none;
+}
+
+.item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    border: 2px solid rgb(88, 2, 2);
+    border-radius: 10px;
+    box-shadow: 0 3px 5px 2px rgb(117, 115, 115);
+    padding: 10px;
+    opacity: .7;
+    width: 85vw;
+    height: 85vh;
+    color: #fff;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    text-transform: uppercase;
+}
+
+
+input{
+    display: block; 
+    width: 60vw;
+     margin: 0 auto;
+      font-size: 3vh;
+       color: rgb(253, 251, 251); 
+       font-weight: bold;
+        background-color: transparent;
+         text-align: center; 
+         border: none; 
+         outline-width: 0; 
+         border-bottom: 2px solid #fff;
+         margin-bottom: 10px;
+}
+
+textarea{
+    width: 70vw;
+    background-color: transparent;
+    color: #fff;
+    font-weight: bold;
+    font-size: 3vh;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 15px;
+}
+
+
+.btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container > .item > form >  .btn > a{
+    color: #fff;
+    text-decoration: none;
+    border-left: 2px solid violet;
+    border-right: 2px solid violet;
+    border-radius: 999px;
+    padding: 5px;
+}
+
+.container > .item > form > .btn >   a:hover{
+    border-top: 2px solid rgb(174, 0, 255);
+    border-bottom: 2px solid rgb(174, 0, 255);
+    background-color: transparent;
+}
+

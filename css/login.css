@@ -1,0 +1,175 @@
+*{
+    margin: 0;padding: 0;box-sizing: border-box;
+}
+
+
+body{
+    width: 100vw;
+    height: 100vh;
+    background-image: url("https://a-static.besthdwallpaper.com/retro-city-wallpaper-2880x1620-30509_52.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+.container{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+form{
+    width: 450px;
+    height: 450px;
+    border: 2px solid rgb(190, 7, 7);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    text-align: center;
+    background-color: black;
+    opacity: .5;
+    animation: shake 1s infinite;
+    box-shadow:0 5px 5px 5px #fff;
+    cursor: pointer;
+}
+
+form:hover{
+     animation: none;
+}
+
+@keyframes shake {
+    0% { transform: translate(1px, 1px) rotate(0deg); }
+    10% { transform: translate(-1px, -2px) rotate(-1deg); }
+    20% { transform: translate(-3px, 0px) rotate(1deg); }
+    30% { transform: translate(3px, 2px) rotate(0deg); }
+    40% { transform: translate(1px, -1px) rotate(1deg); }
+    50% { transform: translate(-1px, 2px) rotate(-1deg); }
+    60% { transform: translate(-3px, 1px) rotate(0deg); }
+    70% { transform: translate(3px, 1px) rotate(-1deg); }
+    80% { transform: translate(-1px, -1px) rotate(1deg); }
+    90% { transform: translate(1px, 2px) rotate(0deg); }
+    100% { transform: translate(1px, -2px) rotate(-1deg); }
+  }
+
+form > .head {
+    background-color: black;
+    width: 100%;
+    border: 2px solid rgb(255, 7, 7);
+   border-top-left-radius:10px ;
+    border-top-right-radius:10px ;
+    opacity: .8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 2px;
+}
+form > .head > h1{
+    color: rgb(255, 254, 255);
+    font-size: 6vh;
+    font-family: sans-serif;
+    letter-spacing: 1px;
+    font-weight: bold;
+}
+
+form > .form_item{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 6rem;
+}
+
+form > .form_item > div{
+             margin-bottom: 30px;
+             background-color: transparent;
+             width: 100%;
+             text-align: center;
+}
+
+form > .form_item > .email > input{
+    width: 80%;
+    border: none;
+    outline-width: 0;
+    background-color: rgb(248, 241, 241);
+    font-size: 3.5vh;
+    color: rgb(10, 10, 10);
+    font-weight: bold;
+    border-bottom: 2px solid black;
+    text-align: center;
+    padding: 5px;
+    border-radius: 999px;
+}
+form > .form_item > .pass > input{
+    width: 80%;
+    border: none;
+    outline-width: 0;
+    background-color: rgb(248, 241, 241);
+    font-size: 3.5vh;
+    color: rgb(10, 10, 10);
+    font-weight: bold;
+    border-bottom: 2px solid black;
+    text-align: center;
+    padding: 5px;
+    border-radius: 999px;
+}
+form > .form_item > .btn > input{
+    width: 25vw;
+    border: none;
+    outline-width: 0;
+    background-color: rgb(248, 241, 241);
+    font-size: 3.5vh;
+    color: rgb(253, 249, 249);
+    font-weight: bold;
+    border-bottom: 2px solid black;
+    text-align: center;
+    padding: 5px;
+    border-radius: 999px;
+    color: black;
+    cursor: pointer;
+}
+
+form > .form_item > .btn > input:hover{
+    border-top: 3px solid red;
+    border-bottom: 3px solid red;
+    border-left: none;
+    border-right: none;
+    background-color: transparent;
+    color: #fff;
+}
+
+
+
+@media (max-width:600px) {
+     form{
+          width: 70vw;
+          height: 350px;
+     }
+
+     form > .head > h1{
+         font-size: 5vh;
+     }
+
+     form > .form_item >  .email > input{
+         width: 50vw;
+         font-size: 3vh;
+     }
+     form > .form_item >  .pass > input{
+         width: 50vw;
+         font-size: 3vh;
+     }
+
+     form > .form_item > .btn > input{
+         font-size: 2.9vh;
+         width: 30vw;
+     }
+}
+
+
+
+
+
+

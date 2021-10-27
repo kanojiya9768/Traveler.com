@@ -1,0 +1,104 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.box{
+    width: 100vw;
+    height: 100vh;
+    background-color:#fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url("https://a-static.besthdwallpaper.com/retro-city-wallpaper-2880x1620-30509_52.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.row{
+   display: flex;
+  width: 95vw;
+  height:80vh;
+  padding: 5px;
+  align-items: center;
+  margin-bottom: 7rem 0;
+  border-radius: 10px;
+  background-color: black;
+  opacity: .8;
+}
+
+.row > .left{
+    float: left;
+    width: 50%;
+    height: 100%;
+    margin: 10px;
+    box-shadow: 0 5px 5px black;
+    background-image: url("https://wallpaperaccess.com/full/5243054.jpg");
+    border-radius: 10px;
+    background-position:center;
+     overflow: hidden;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+.row > .right{
+    float: right;
+    width: 70%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: end;
+    margin-left: 10px;
+  margin-right: 10px;
+    overflow: auto;
+}
+
+
+.row > .right > .head {
+      /* border: 5px solid yellow; */
+      padding: 1vw 7vw;
+      color: #fff;
+      text-transform: capitalize;
+}
+
+
+@media (max-width:678px){
+    .row{
+       display: flex;
+       flex-direction: column;
+  width: 90vw;
+  height:80vh;
+  align-items: center;
+  /* margin-bottom: 7rem 0; */
+  border-radius: 10px;
+  overflow: hidden;
+  margin-top:10px;
+  border: 2px solid rgb(94, 4, 4);
+    }
+
+    .row > .left{
+        width: 90%;
+        height: 500vh;
+        margin-top: 5px;
+        overflow: hidden;
+        background-image: url("https://wallpaperaccess.com/full/5320571.jpg");
+        background-size: contain;
+        background-position: top;
+        margin-bottom: 30px;
+    }
+
+    .row > .right{
+    width: 70%;
+    height: 250vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 210px;
+}
+
+
+}
